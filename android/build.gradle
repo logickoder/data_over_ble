@@ -50,6 +50,12 @@ android {
     }
 
     dependencies {
+        def ble_version = '1.0.14'
+        implementation "no.nordicsemi.android.kotlin.ble:scanner:$ble_version"
+        implementation "no.nordicsemi.android.kotlin.ble:client:$ble_version"
+        implementation "no.nordicsemi.android.kotlin.ble:advertiser:$ble_version"
+        implementation "no.nordicsemi.android.kotlin.ble:server:$ble_version"
+
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
         testImplementation 'org.mockito:mockito-core:5.0.0'
     }
